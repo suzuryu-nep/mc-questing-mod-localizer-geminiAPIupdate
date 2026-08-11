@@ -87,8 +87,8 @@ def split_batch(batch: Dict) -> Tuple[Dict, Dict]:
 
     for key, value in batch.items():
         keep_cond = not isinstance(value, str) \
-                    or (value.startswith("[") and value.endswith("]")) \
-                    or (value.startswith("{") and value.endswith("}"))
+                  or (value.startswith("[") and value.endswith("]")) \
+                  or (value.startswith("{") and value.endswith("}"))
         if keep_cond:
             batch_keep[key] = value
         else:
@@ -318,25 +318,6 @@ class DeepLTranslator(MachineTranslator):
             preserve_formatting=True
         )
 
-# class LibreTranslator(MachineTranslator):
-#     logger: logging.Logger
-#     translator: LibreTranslateAPI
-#     lang_list: List[str] = list(MINECRAFT_TO_LIBRE)
-#     languages: Dict = MINECRAFT_TO_LIBRE
-    
-#     def init_translator(self, auth_key: str = None):
-#         self.translator = LibreTranslateAPI(api_key=auth_key)
-    
-#     @st.cache_data(ttl=60)
-#     @staticmethod
-#     def check_auth_key(auth_key: str = None) -> int:
-#         try:
-#             lt = LibreTranslateAPI(api_key=auth_key)
-#             test = lt.translate("ping", "en", "es")
-#             return 1
-#         except:
-#             return 0
-    
 class LLMTranslator(BaseTranslator, ABC):
     """Base class for LLM-based translators like Gemini and OpenAI."""
     
@@ -358,7 +339,7 @@ class LLMTranslator(BaseTranslator, ABC):
     
     @staticmethod
     @abstractmethod
-    def check_auth_key(auth_key: str) -> int:
+    def check_auth_key(auth_key: str = None) -> int:
         pass
     
     # Langchain automatically retries failed requests
@@ -378,7 +359,7 @@ class LLMTranslator(BaseTranslator, ABC):
 class GeminiTranslator(LLMTranslator):
     def init_translator(self, auth_key: str):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash-lite",
             google_api_key=auth_key,
             temperature=0
         )
@@ -392,7 +373,7 @@ class GeminiTranslator(LLMTranslator):
             return -1
         try:
             llm = ChatGoogleGenerativeAI(
-                model="gemini-2.0-flash",
+                model="gemini-2.5-flash-lite",
                 google_api_key=auth_key,
                 temperature=0
             )
