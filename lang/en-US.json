@@ -9,7 +9,7 @@
     "back_to_home": "Back to Home",
     "deepl_key_label": "DeepL API Key",
     "deepl_key_help": "To get your API key, visit [DeepL API](https://www.deepl.com/pro-api) and sign up for a DeepL account. (free tier available)",
-    "gemini_key_label": "Gemini API Key (gemini-2.0-flash)",
+    "gemini_key_label": "Gemini API Key (gemini-3.5-flash)",
     "gemini_key_help": "To get your API key, visit [Gemini API](https://ai.google.dev/gemini-api/docs) and sign up for a Gemini account. (free tier available)",
     "openai_key_label": "OpenAI API Key (gpt-4o-mini)",
     "openai_key_help": "To get your API key, visit [OpenAI API](https://platform.openai.com/signup) and sign up for an OpenAI account.",
