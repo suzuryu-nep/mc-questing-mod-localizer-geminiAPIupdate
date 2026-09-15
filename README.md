@@ -4,8 +4,17 @@ https://mc-questing-mod-localizer-geminiapiupdate.streamlit.app/
 ## About This Fork
 This is a simple fork that just updates the Gemini model. I'm releasing it in the hope that it will be helpful to others, but please don't expect any support—I don't know how to code.
 * This text was translated using a translation service.
+### What's Different?
+There is only one change: when Gemini is selected, the model called is now `gemini-3.5-flash`.
+This allows the process to start without returning an error even when using Gemini.
+If you do not use Gemini, this fork is identical to the original, so there is no benefit to using it.
+
 ## このフォークについて
 これは、Geminiのモデルを更新しただけのシンプルなフォークです。他の人の助けになるよう公開しますが、サポートは期待しないでください。コーディングはできないので。
+### 何が違うのか
+行った変更はたったひとつ―Gemini選択時に呼び出すモデルを`gemini-3.5-flash`にする。
+これにより、Geminiを使用してもエラーを返さずに処理を開始できます。
+Geminiを使用しない場合はオリジナルと全く同じなので、このフォークを使うメリットはありません。
 
 # Minecraft Questing Mod Localizer
 
