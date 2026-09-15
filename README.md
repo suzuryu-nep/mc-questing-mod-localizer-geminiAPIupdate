@@ -1,19 +1,27 @@
+# TL;DR: Here's the web app:
+https://mc-questing-mod-localizer-geminiapiupdate.streamlit.app/
+
+## About This Fork
+This is a simple fork that just updates the Gemini model. I'm releasing it in the hope that it will be helpful to others, but please don't expect any support—I don't know how to code.
+* This text was translated using a translation service.
+## このフォークについて
+これは、Geminiのモデルを更新しただけのシンプルなフォークです。他の人の助けになるよう公開しますが、サポートは期待しないでください。コーディングはできないので。
+
 # Minecraft Questing Mod Localizer
 
-![GitHub Release](https://img.shields.io/github/v/release/peunsu/mc-questing-mod-localizer?style=for-the-badge)
+![GitHub Release](https://img.shields.io/github/v/release/suzuryu-nep/mc-questing-mod-localizer-geminiAPIupdate?style=for-the-badge)
 
 Minecraft Questing Mod Localizer is a web application that helps you to localize quest files of Minecraft questing mods.
 You can convert quest files to localizable format, translate quest files to other languages, and apply the translated quest files to the modpack.
 This application supports [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) and [Better Questing](https://www.curseforge.com/minecraft/mc-mods/better-questing).
 
-* ~~Web App: https://mc-questing-mod-localizer.streamlit.app~~
-  * There is no web app for this fork yet.
+* Web App: https://mc-questing-mod-localizer-geminiapiupdate.streamlit.app/
 
 # Installation
 * **Python 3.10** is required
 * Clone the repo:
 ```bash
-$ git clone https://github.com/peunsu/mc-questing-mod-localizer
+$ git clone https://github.com/suzuryu-nep/mc-questing-mod-localizer-geminiAPIupdate
 ```
 * Change directory:
 ```bash
