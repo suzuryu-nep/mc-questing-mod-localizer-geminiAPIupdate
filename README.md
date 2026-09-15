@@ -6,7 +6,8 @@ Minecraft Questing Mod Localizer is a web application that helps you to localize
 You can convert quest files to localizable format, translate quest files to other languages, and apply the translated quest files to the modpack.
 This application supports [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) and [Better Questing](https://www.curseforge.com/minecraft/mc-mods/better-questing).
 
-* Web App: https://mc-questing-mod-localizer.streamlit.app
+* ~~Web App: https://mc-questing-mod-localizer.streamlit.app~~
+  * There is no web app for this fork yet.
 
 # Installation
 * **Python 3.10** is required
